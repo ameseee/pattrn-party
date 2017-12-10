@@ -24,7 +24,7 @@
   border-right: 1px solid #fff;
 }
 
-#active-tab {
+.active-tab {
   background-color: #fff;
   border: 1px solid #d1d2d3;
   border-right: 1px solid #d1d2d3;
@@ -53,9 +53,24 @@
 .accordian-photo {
   height: 375px;
   width: 30%;
-  background-image: url(./assets/shih-tzu.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.photo-1 {
+  background-image: url(./assets/frenchie-1.jpg);
+}
+
+.photo-2 {
+  background-image: url(./assets/frenchie-2.jpg);
+}
+
+.photo-3 {
+  background-image: url(./assets/frenchie-3.jpg);
+}
+
+.photo-4 {
+  background-image: url(./assets/frenchie-4.jpg);
 }
 
 .accordian-card-content {
@@ -148,7 +163,7 @@
     margin: 2px 0.5% 0 0.5%;
   }
 
-  #active-tab {
+  .active-tab {
     border: none;
   }
 
