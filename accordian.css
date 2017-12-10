@@ -1,0 +1,177 @@
+.accordian-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab {
+  width: 25%;
+  border-top: 1px solid #fff;
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #d1d2d3;
+  cursor: pointer;
+  text-align: center;
+  padding: 7.5px;
+  font-size: 115%;
+  color: #666666;
+}
+
+.tab-1,
+.tab-2,
+.tab-3 {
+  border-right: 1px solid #fff;
+}
+
+#active-tab {
+  background-color: #fff;
+  border: 1px solid #d1d2d3;
+  border-right: 1px solid #d1d2d3;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.tab span {
+  display: none;
+}
+
+.card {
+  display: none;
+  padding: 25px;
+}
+
+.active-card {
+  display: block;
+  border: 1px solid #D1D2D3;
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accordian-photo {
+  height: 375px;
+  width: 30%;
+  background-image: url(./assets/shih-tzu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordian-card-content {
+  padding-top: 20px;
+  width: 65%;
+}
+
+.accordian-card-title {
+  grid-area: title;
+  border-bottom: 1px solid #D1D2D3;
+  padding-bottom: 10px;
+  font-size: 150%;
+}
+
+.accordian-card-text {
+  grid-area: text;
+  padding-top: 20px;
+  font-size: 131%;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .accordian-photo {
+    width: 40%;
+  }
+
+  .accordian-card-content {
+    width: 55%;
+  }
+
+  .accordian-card-text {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .accordian-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto auto);
+    grid-template-areas:
+    "tab-1" "card-1" "tab-2" "card-2" "tab-3" "card-3" "tab-4" "card-4";
+    border: 1px solid #d1d2d3;
+  }
+
+  .tab span {
+    display: inline-block;
+  }
+
+  .tab-1 {
+    grid-area: tab-1;
+  }
+
+  .tab-2 {
+    grid-area: tab-2;
+  }
+
+  .tab-3 {
+    grid-area: tab-3;
+  }
+
+  .tab-4 {
+    grid-area: tab-4;
+  }
+
+  #card-1 {
+    grid-area: card-1;
+  }
+
+  #card-2 {
+    grid-area: card-2;
+  }
+
+  #card-3 {
+    grid-area: card-3;
+  }
+
+  #card-4 {
+    grid-area: card-4;
+  }
+
+  .tab {
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    width: 99%;
+    padding: 10px 20px;
+    border: none;
+    margin: 2px 0.5% 0 0.5%;
+  }
+
+  #active-tab {
+    border: none;
+  }
+
+  .active-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+  }
+
+  .accordian-photo {
+    height: 200px;
+    width: 100%;
+    background-position: center;
+  }
+
+  .accordian-card-content {
+    margin: 0 auto 30px auto;
+    width: 90%;
+  }
+
+  .accordian-card-text {
+    font-size: 100%;
+  }
+
+}

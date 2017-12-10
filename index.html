@@ -5,40 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="accordian.css">
     <title>Pattrn Party</title>
   </head>
   <body>
-    <nav>
-        <h1>Pattrn <span class="party">Party</span></h1>
-        <h2>Amy Holt</h2>
-    </nav>
+    <header class="header">
+        <h1 class="pattrn-party">Pattrn <span class="party">Party</span></h1>
+        <h2 class="name">Amy Holt</h2>
+    </header>
     <main>
       <section class="section">
-        <h3 class="section-title">Accordian Tabs</h3>
+        <div class="section-header">
+          <h3 class="section-title">Accordian Tabs</h3>
+          <div class="section-line"></div>
+        </div>
+
         <section class="accordian-container">
-          <div class="tab tab-1" id="active-tab">Tab 1<span>showing</span></div>
-          <div class="tab tab-2">Tab 2<span>hidden</span></div>
-          <div class="tab tab-3">Tab 3<span>hidden</span></div>
-          <div class="tab tab-4">Tab 4<span>hidden</span></div>
+
+          <div class="tab tab-1" id="active-tab">Tab 1<span>-</span></div>
+          <div class="tab tab-2">Tab 2<span>+</span></div>
+          <div class="tab tab-3">Tab 3<span>+</span></div>
+          <div class="tab tab-4">Tab 4<span>+</span></div>
           <article class="card active-card" id="card-1">
+            <div class="accordian-photo"></div>
+            <aside class="accordian-card-content">
+              <h3 class="accordian-card-title">Puppy Ipsum 1</h3>
+              <p class="accordian-card-text">Puppy kitty ipsum dolor sit good dog foot stick canary. Teeth Mittens grooming vaccine walk swimming nest good boy furry tongue heel furry treats. Cage run fast kitten dinnertime ball run foot park fleas throw house train licks stick dinnertime window. </p>
+              <p class="accordian-card-text">Bird food treats tongue lick teeth ferret litter box slobbery litter box crate bird small animals yawn small animals shake slobber gimme five toys polydactyl meow. Lazy cat groom canary window tooth brush supplies water dog shake pet supplies.</p>
+            </aside>
+          </article>
+          <article class="card" id="card-2">
             <img class="accordian-card-photo"src="./assets/shih-1.jpg" alt="Close up shot of shih-tzu">
-            <h3 class="accordian-card-title">Lorem Ipsum 1</h3>
-            <p class="accordian-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+            <aside class="accordian-card-content">
+              <h3 class="accordian-card-title">Puppy Ipsum 2</h3>
+              <p class="accordian-card-text">Walk bird harness wet nose meow harness grooming water dog lol catz water bedding toys bird seed fetch lazy cat. Parakeet scratcher brush biscuit lick dog tooth walk food lazy cat biscuit. Cockatiel Snowball kitten Rover ferret puppy.</p>
+              <p class="accordian-card-text">Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Maine Coon Cat walk catch water dog slobber chew scratcher ID tag litter tuxedo dog house lazy cat park. </p>
+            </aside>
           </article>
-          <article class="card">
-            <h3>Lorem Ipsum 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+          <article class="card" id="card-3">
+            <img class="accordian-card-photo"src="./assets/shih-1.jpg" alt="Close up shot of shih-tzu">
+            <aside class="accordian-card-content">
+              <h3 class="accordian-card-title">Puppy Ipsum 3</h3>
+              <p class="accordian-card-text">Dinnertime fetch throw feathers fleas tongue lazy cat lick throw kitten wag tail aquarium chew heel good boy lick feathers cockatiel. Wet Nose food ferret vaccine finch vaccination Scooby snacks string wagging barky tail head good boy pet gate meow good boy.</p>
+              <p class="accordian-card-text">Commands shake bird biscuit left paw finch bark ferret bark gimme five turtle fur canary. Water puppy dog lick kisses pet supplies slobber cat bird seed. Food sit biscuit groom tongue cage.</p>
+            </aside>
           </article>
-          <article class="card">
-            <h3>Lorem Ipsum 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
-          </article>
-          <article class="card">
-            <h3>Lorem Ipsum 4</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+          <article class="card" id="card-4">
+            <img class="accordian-card-photo"src="./assets/shih-1.jpg" alt="Close up shot of shih-tzu">
+            <aside class="accordian-card-content">
+              <h3 class="accordian-card-title">Puppy Ipsum 4</h3>
+              <p class="accordian-card-text">Play Dead sit nap lazy dog wet nose Tigger run fast fish lazy cat wagging toy field yawn feathers ferret yawn aquarium.Feathers bird seed food scratcher gate maine coon cat collar twine parakeet. Roll Over kitty barky critters litter stick window litter box wagging field toy.</p>
+              <p class="accordian-card-text">Whiskers harness biscuit food lick small animals throw meow house train. Bedding field small animals groom vaccine. Commands running gimme five groom slobber run fast head ball litter box biscuit catch run fast roll over.</p>
+            </aside>
           </article>
         </section>
         <button class="accordian-code-btn btn"type="button" name="button">View Code</button>
