@@ -90,18 +90,18 @@ h2 {
   text-align: center;
 }
 
-.active-tab {
-  display: block;
-  background-color: #fff;
-  border: 1px solid #d1d2d3;
-  border-bottom: none;
-  font-weight: 600;
+.tab-1,
+.tab-2,
+.tab-3 {
+  border-right: 1px solid #fff;
 }
 
-#tab-1,
-#tab-2,
-#tab-3 {
-  border-right: 1px solid #fff;
+#active-tab {
+  background-color: #fff;
+  border: 1px solid #d1d2d3;
+  border-right: 1px solid #d1d2d3;
+  border-bottom: none;
+  font-weight: 600;
 }
 
 .tab span {
