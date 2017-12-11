@@ -71,7 +71,7 @@ body {
 
 .btn {
   color: #fff;
-  background-color: #2F2235;
+  background-color: #3F3244;
   outline: none;
   padding: 10px;
   width: 25%;
@@ -85,9 +85,30 @@ body {
 
 .btn:hover {
   cursor: pointer;
-  background-color: #3F3244;
+  background-color: #2F2235;
 }
 
+@media (min-width: 1280px) {
+  .pattrn-party {
+    font-size: 250%;
+  }
+
+  .name {
+    padding: 25px 0;
+    padding-right: 4%;
+    font-size: 175%;
+  }
+
+  .section-title {
+    font-size: 175%;
+  }
+
+  .btn {
+    font-size: 160%;
+    padding: 15px;
+  }
+
+}
 
 /*REUSABLE MQs*/
 @media (max-width: 800px) {

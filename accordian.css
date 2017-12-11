@@ -92,6 +92,29 @@
   line-height: 1.5;
 }
 
+
+@media (min-width: 1280px) {
+
+  .tab {
+    font-size: 175%;
+    padding:  20px;
+  }
+
+  .accordian-card-title {
+    font-size: 210%;
+  }
+
+  .accordian-photo {
+    height: 600px;
+  }
+
+  .accordian-card-text {
+    font-size: 170%;
+    padding-top: 30px;
+  }
+
+}
+
 @media (max-width: 1000px) {
   .accordian-photo {
     width: 40%;
