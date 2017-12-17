@@ -1,0 +1,149 @@
+.flexible-cards-section {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "topLeft topLeft topRight"
+  "middleLeft middle middleRight"
+  "bottomLeft bottomRight bottomRight";
+  grid-column-gap: 1%;
+  grid-row-gap: 15px;
+}
+
+.flexible-card-1 {
+  grid-area: topLeft;
+  height: 350px;
+}
+
+.flexible-card-2 {
+  grid-area: topRight;
+}
+
+.flexible-card-3 {
+  grid-area: middleLeft;
+}
+
+.flexible-card-4 {
+  grid-area: middle;
+}
+
+.flexible-card-5 {
+  grid-area: middleRight;
+}
+
+.flexible-card-6 {
+  grid-area: bottomLeft;
+}
+
+.flexible-card-7 {
+  grid-area: bottomRight;
+}
+
+.flexible-photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.flexible-card-img-1 {
+  background-image: url(./assets/shih-tzu-1.jpg);
+}
+
+.flexible-card-img-2 {
+  background-image: url(./assets/shih-tzu-2.jpg);
+}
+
+.flexible-card-img-3 {
+  background-image: url(./assets/shih-tzu-3.jpg);
+}
+
+.flexible-card-img-4 {
+  background-image: url(./assets/shih-tzu-4.png);
+  background-position: right;
+}
+
+.flexible-card-img-5 {
+  background-image: url(./assets/shih-tzu-5.jpg);
+}
+
+.flexible-card-img-6 {
+  background-image: url(./assets/shih-tzu-6.jpg);
+}
+
+.flexible-card-img-7 {
+  background-image: url(./assets/shih-tzu-7.jpg);
+}
+
+.flexible-card-title {
+  border: 1px solid #d1d2d3;
+  color: #000;
+  font-size: 150%;
+  padding: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+
+  .flexible-card-1 {
+    height: 250px;
+  }
+
+  .flexible-cards-section {
+    width: 80%;
+    grid-column-gap: 2%;
+    grid-row-gap: 5px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .flexible-cards-section {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+    "flexible-card-1"
+    "flexible-card-2"
+    "flexible-card-3"
+    "flexible-card-4"
+    "flexible-card-5"
+    "flexible-card-6"
+    "flexible-card-7";
+    grid-row-gap: 20px;
+  }
+
+  .flexible-card-1 {
+    grid-area: flexible-card-1;
+  }
+
+  .flexible-card-2 {
+    grid-area: flexible-card-2;
+  }
+
+  .flexible-card-3 {
+    grid-area: flexible-card-3;
+  }
+
+  .flexible-card-4 {
+    grid-area: flexible-card-4;
+  }
+
+  .flexible-card-5 {
+    grid-area: flexible-card-5;
+  }
+
+  .flexible-card-6 {
+    grid-area: flexible-card-6;
+  }
+
+  .flexible-card-7 {
+    grid-area: flexible-card-7;
+  }
+
+  .flexible-photo {
+    background-position: center;
+    height: 275px;
+  }
+
+}
