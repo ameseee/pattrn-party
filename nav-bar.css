@@ -67,7 +67,21 @@
 
 @media (max-width: 800px) {
 
-  .nav {
+  .nav-collapsed {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "menu";
+    background-color: #F2F2F2;
+  }
+
+  .nav-collapsed h3,
+  .nav-collapsed input {
+    display: none;
+  }
+
+  .nav-showing {
     padding: 0px;
     display: grid;
     grid-template-columns: 100%;
