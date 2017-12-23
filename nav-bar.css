@@ -1,0 +1,47 @@
+.nav-bar-section {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #d1d2d3;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.nav-photo {
+  background-image: url(./assets/shih-tzu-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+}
+
+.nav-photo:hover,
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.nav-link {
+  font-weight: 300;
+  font-size: 110%;
+  color: #666666;
+}
+
+.nav-search {
+  width: 200px;
+  padding: 10px 45px;
+  background-color: #F2F2F2;
+  outline: none;
+  border: 1px solid #666666;
+  font-size: 100%;
+  background-image: url(./assets/magnifying-glass.svg);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 0.75em;
+}

@@ -45,6 +45,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
+  opacity: 0.5;
+  transition: opacity 0.75s;
+}
+
+.flexible-photo:hover {
+  opacity: 1;
 }
 
 .flexible-card-img-1 {
